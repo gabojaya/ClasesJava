@@ -31,11 +31,11 @@ public class CombinacionSR {
      * @return
      */
     public static int calcularNroCombinaciones(int n, int r) {
-        int c;
+        int c = 0;
         c = calcularfactorial(n) / (calcularfactorial(r) * calcularfactorial(n - r));
         return c;
     }
-
+    
     /**
      * Esta funcion me permite mostrar todos las posibles combinaciones sin
      * repeticion
