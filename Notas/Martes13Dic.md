@@ -27,7 +27,8 @@ comando "extends"
  
 " - " privado
 
-" ~ " protegido 
+" ~ " paquete
+" # " protegido
 
 ## Herencia
 
@@ -63,10 +64,43 @@ Normalmente sera necesario inicializar los tributos de la superclase
 
 /** Constructor de una subclase*/
 public Subclase(parametros...){
-  super(parametros para la superclase);
+
+  super(parametros para la superclase);  ------>Siempre debe ir en la primera linea
   //inicializa sus atributos
   ...
+  
 }
 
 - la llamada a "super" debe ser la primera instruccion del constructor de la subclase
+
+
+
+"override"
+esta subclase puede redefinir una operacion en lugar de heredarla directamente.
+Es conveniente indicarlo utilizando la anotacion
+
+@Override
+
+public String to String(){
+}
+
+En muchas ocasiones (no siempre) la operacion redefinida invoca la de superclase
+- se usa para ello la palabra reservada super
+
+super.nombreMetodo(parametros...);
+
+. se refiere a la superclase del objeto actual
+
+Ejemplo:
+
+public class Vigilante Nocturno extends Vigilante{
+...
+@Override
+public float sueld(){
+return super.sueldo()+PLUS_NOCTURNIDAD;
+}
+}
+atributos protected en Java NO es una buena practica de programacion.
+
+
 
