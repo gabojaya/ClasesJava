@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @version 1.1
  *          Determinar el are de un rectangulo
  */
-public class App {
+public class Clases {
 
     private static void calcularAreaRect() {
         int longitud = 0, ancho = 0, areaRect = 0;
