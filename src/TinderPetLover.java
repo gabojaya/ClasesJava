@@ -1,5 +1,6 @@
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.plaf.ColorChooserUI;
 import javax.swing.plaf.synth.ColorType;
@@ -7,7 +8,7 @@ import java.awt. Color;
 public class TinderPetLover {
     public static void main(String[] args) {
         JFrame frm = new JFrame();
-        frm. setTitle("Principal");                               
+        frm. setTitle("Tinder PetLover");                               
         frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
         frm.setResizable(false);                                   
         frm.setSize(1000,500);                       
@@ -17,8 +18,10 @@ public class TinderPetLover {
         //frm.getContentPane().setBackground(new  Color(12,45,54));  
         ImageIcon image = new ImageIcon("Logo.png");
         frm.setIconImage(image.getImage());
-        frm.getContentPane().setBackground(new Color(12,111,54));
+        frm.getContentPane().setBackground(new Color(255,228,196));
 
+     
+        
 
 
     }

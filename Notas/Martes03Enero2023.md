@@ -72,4 +72,40 @@ ___
 ## User interface UI
 Es el espacio donde se producen las interacciones entre sere humanos y maquinas. El objetivo de esta interaccion es permitir el funcionamiento y control mas efectivo de la maquina desde la interaccion con el humano.
 
+___
+___
 
+# Miercoles 04 2023
+
+## **Arquitectura (N-TIER) **
+
+En el Layer - poner un Logic y Ruler
+
+Naranja - UI components, solo capta objetos
+
+Azul - Capas de interfases de servicios
+
+Verde - Capas que almacenan informacion
+
+Gris en vertical - Capas de Seguridad 
+
+Falta unca capa que transporta los datos
+
+Data transfer opcion D.T.O
+
+Data access components D.A.C
+
+**Viene acompañado de un servidor(Hardware)**
+Mas RAM
+
+
+En la capa de energia que homonizacion los saletite
+
+Capas: 
+
+
+Presentacion
+
+Logica
+
+Datos
