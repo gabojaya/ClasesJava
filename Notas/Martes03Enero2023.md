@@ -95,7 +95,7 @@ Data transfer opcion D.T.O
 
 Data access components D.A.C
 
-**Viene acompañado de un servidor(Hardware)**
+**Viene acompaï¿½ado de un servidor(Hardware)**
 Mas RAM
 
 

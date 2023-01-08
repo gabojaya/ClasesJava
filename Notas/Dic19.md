@@ -17,8 +17,6 @@ una felcha indica direccion
 
 una linea puede significar doble direccion
 
-uso
-
 inclusion <<include>>
   
 extension <<extector>>

@@ -101,6 +101,3 @@ return super.sueldo()+PLUS_NOCTURNIDAD;
 }
 }
 atributos protected en Java NO es una buena practica de programacion.
-
-
-
