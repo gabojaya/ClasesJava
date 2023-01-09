@@ -1,6 +1,6 @@
-import BusinessLogic.Cliente;
+import BusinessLogic.*;
 
-public class TinderPetLover {
+public class App {
     public static void main(String[] args) throws Exception {
         MasterFrame frm1 = new MasterFrame();
         Cliente c = new Cliente();
