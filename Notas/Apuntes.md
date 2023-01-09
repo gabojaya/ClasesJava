@@ -35,6 +35,55 @@
 
    **Windows** CTRL+SPACE, CTRL+SHIFT+SPACE
 
+# <span style ="color:skyblue"> Viernes 18/11/2022 Comandos Github--------
+- Tu identidad 
+
+$ git config --global user.name "____"
+
+$ git config --global user.email gabo@example.com
+
+- Verficando
+
+$ git config user.name
+
+$ git config user.email
+
+- Inicio del control de versiones
+
+$ git init
+
+$ git status
+
+$ git add .
+
+$ git add NombreCarpeta/NombreArchivo
+
+$ git commit -m 'mensaje : initial project version'
+
+- Inicio del control de versiones -clonando
+
+$ git clone https://github.com/xxyyy/abc
+
+$ git clone https://github.com/xxyyy/abc miPropioNombre
+
+- Quitar archivo del control 
+
+$ echo nombreArchivo.ext >> .gitignore
+
+$ echo *.txt >> .gitignore
+
+- Ver archivos ignorados
+
+$ cat .gitignore
+
+- Forzar agregar archivo excluido
+
+$ git add -f NombreArchivo.log
+
+
+
+
+
 # <span style ="color:skyblue"> Lunes 21/11/2022 Comandos Markdown--------
 
 **Negrilla1**
