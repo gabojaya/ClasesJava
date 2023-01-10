@@ -1,5 +1,3 @@
-package pkHerencia;
-
 public class Padre {
     // Propiedades
     private String nombre;

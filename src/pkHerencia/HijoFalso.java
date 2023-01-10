@@ -1,7 +1,8 @@
-package App;
+package pkHerencia;
 
-import pkHerencia.Hijo;
+
 import pkHerencia.Padre;
+import pkHerencia.Hijo;
 
 public class HijoFalso {
  public static void main(String[] args) {
