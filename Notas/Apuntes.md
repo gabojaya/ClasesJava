@@ -86,6 +86,17 @@ $ git add -f NombreArchivo.log
 
 # <span style ="color:skyblue"> Lunes 21/11/2022 Comandos Markdown--------
 
+**Encabezados**  
+
+Los *encabezados* dependeran del numero de '#' que se coloque delante de cada palabra, siguiendo la misma logica, solo usaremos el # una vez para ser el titulo general del documento
+
+`# Encambezado 1`  
+`## Encambezado 2`  
+`### Encambezado 3`  
+`#### Encambezado 4`  
+`##### Encambezado 5`  
+`###### Encambezado 6`
+
 **Negrilla1**
 
 __Negrilla2__
@@ -159,18 +170,18 @@ Hola
 
 # <span style ="color:skyblue"> Martes 22/11/2022 Sintaxis---------------
 
-## Compilador
+## <span style ="color: Purple">Compilador
 Sintaxis - Codigo bien escrito, palabras reservadas
 
 Semantico - Sentido de lo que se escribe
 
-## Metodos 
+## <span style ="color:Purple">Metodos 
 - retornan valor "funcion"
 - no retorna valor "procedimiento"
 
 ---
 
-## Forma archivo
+## <span style ="color:Purple">Forma archivo
 - Archivo: Hola.java
 - public class "Nombre del archivo".
 - estandar codif: camelcase 
@@ -216,6 +227,7 @@ public static void main (**String argumento**)
 
 
 # <span style ="color:skyblue">Miercoles 23/11/2022 Algoritmo-------------
+
 <span style ="color:lightgreen">**Algoritmia -->Algoritmo----> Solucionar un Problema**
 1. Pseudocodigo
 2. Diagramas de flujo
@@ -249,6 +261,7 @@ Ausencia de seguridad-Vulneravilidad
  Conlusion: Programar de manera **PRO** se logra con tecnica
 
 # <span style ="color:skyblue">Jueves 24/11/2022 Operador Ternario-------------
+
 ## Operador ternario
 ```
 m = (a>b)? a:b;
@@ -263,7 +276,7 @@ m = (a>b)? a:b;
  }
  ```
 
-# <span style ="color:skyblue"> Martes 06/12/2022--------------
+# <span style ="color:skyblue"> Martes 06/12/2022 Atajo para metodos-------------
 
   Sacar un metodo del codigo principal
   - Seleccionar las lineas de codigo requeridas
@@ -293,10 +306,9 @@ Metodos ------> Constructores
 
 comando "extends"
 
-# <span style ="color:skyblue"> Miercoles 14/12/2022 Ventajas y Desventajas Herencias---------
+# <span style ="color:skyblue"> Miercoles 14/12/2022 Constructores---------
 
- 
-
+### <span style ="color:Purple">**NOTACION PARA AMBITOS**
  "+"  publico
  
 " - " privado
@@ -304,7 +316,7 @@ comando "extends"
 " ~ " paquete
 " # " protegido
 
-## Herencia
+## <span style ="color:orange"> Herencia
 
 herencia---> subclases------>
 
@@ -325,9 +337,7 @@ La subclase se puede elegir para operaciones heredadas:
 
 La herencia puede aplicarse en sucesivos niveles, creando grandes jerarquias de clases.
 
-## Ventajas y desventajas del uso de la herencia
-
-## Constructores
+## <span style ="color:orange"> Constructores
 b = new Barco();
 
 Los constructores no se heredan
@@ -353,10 +363,12 @@ public Subclase(parametros...){
 esta subclase puede redefinir una operacion en lugar de heredarla directamente.
 Es conveniente indicarlo utilizando la anotacion
 
+``` 
 @Override
 
 public String to String(){
 }
+```
 
 En muchas ocasiones (no siempre) la operacion redefinida invoca la de superclase
 - se usa para ello la palabra reservada super
@@ -367,6 +379,7 @@ super.nombreMetodo(parametros...);
 
 Ejemplo:
 
+```
 public class Vigilante Nocturno extends Vigilante{
 ...
 @Override
@@ -374,36 +387,16 @@ public float sueld(){
 return super.sueldo()+PLUS_NOCTURNIDAD;
 }
 }
+```
 atributos protected en Java NO es una buena practica de programacion.
 
 # <span style ="color:skyblue"> Martes 20/12/2022 Modelado UML--------------
+
 Para proyectos grandes
 -Giro de negocio
 
 
 -Casos de uso (Requerimientos funcionales)
-
-Presenta una ventaja sobre la descripcion textual de los requisitos funcionales.
-
--Usuario, sistema, usarios, sistema y creditos.
-
--Cada elipse debe representar una accion (gerundio)
-
-Primero se lo debe modelar
-
-una felcha indica direccion
-
-una linea puede significar doble direccion
-
-inclusion <<include>>
-  
-extension <<extector>>
-  
-generalizacion
-
-# <span style ="color:skyblue"> Martes 03/01/2023 Diagramas e Interfaces -----------
-
-- Diagrama de caso de uso
 
 Identifica los componentes principales que forma al sistema
 
@@ -417,7 +410,18 @@ Se generaliza    ------>
 
 Se especifica <--------
 
----
+**Presenta una ventaja sobre la descripcion textual de los requisitos funcionales.**
+
+-Usuario, sistema, usarios, sistema y creditos.
+
+-Cada elipse debe representar una accion (gerundio)
+
+Primero se lo debe modelar
+
+una felcha indica direccion
+
+una linea puede significar doble direccion
+  
 ---
 << include >>
 
@@ -439,22 +443,21 @@ Establece que debe cumplirse cuando el caso de uso se completa con exito
 
 
 Se lee de arriba hacia abajo.
-Debe responder:
 
-Puede ser?
+- Debe responder
 
-Deber ser es?
+- Puede ser?
 
+- Deber ser es?
 
+# <span style ="color:skyblue"> Martes 03/01/2023 Interfaces -----------
 
-___
-___
 
 ## <span style ="color: pink">Interfaz<span style ="color:red"> - fachada
 La interfaz nos permite especificar un conjunto de operaciones en clase que pueden ser utilizadas por otras.
 La interface difiere de un clase en que no tendra atributos debido a que solo sera un conjunto de operaciones.
 
-- Clase
+- <span style ="color:Orange"> Clase
 
 En clase, puede crear instancias de variables y crear un objeto.
 
@@ -462,13 +465,19 @@ La clase puede contener metodos concretos (con implementaciones)
 
 Los especificadores de acceso utilizados con las clases son privados, protegidos y publicos.
 
-- Interfaz
+- <span style ="color:Orange">Interfaz
 
 En una interfaz, no puede crear instancias de variable y crear un objeto 
 
 La interfaz no puede contener metodos concretos ( con implementacion)
 
 En la interfaz solo se utiliza un especificador
+| PROPIEDAD | CLASES | INTERFAZ |
+|-----------|--------|----------|
+|Propiedades| SI     | NO       |
+|Metodos    | Metodos concretos heredados del padre | No tiene métodos concretos|
+|Caracteristicas| Todos los hijos tienen  los mismos metodos | Cada hijo hereda los metodos y PUEDE CONTROLAR el comportamiento de cada método.|
+|UML| SE ESTIENDE | SE IMPLEMENTA|
 
 ___
 ___
@@ -478,19 +487,19 @@ Es el espacio donde se producen las interacciones entre sere humanos y maquinas.
 ___
 ___
 
-# <span style ="color:skyblue"> Miercoles 04/01/2023---------
+# <span style ="color:skyblue"> Miercoles 04/01/2023 Arquitectura (N-TIER)---------
 
 ## **Arquitectura (N-TIER) **
 
 En el Layer - poner un Logic y Ruler
 
-Naranja - UI components, solo capta objetos
+<span style ="color:Orange">Naranja - UI components, solo capta objetos
 
-Azul - Capas de interfases de servicios
+<span style ="color:skyblue">Azul - Capas de interfases de servicios
 
-Verde - Capas que almacenan informacion
+<span style ="color:green">Verde - Capas que almacenan informacion
 
-Gris en vertical - Capas de Seguridad 
+<span style ="color:grey">Gris en vertical - Capas de Seguridad 
 
 Falta unca capa que transporta los datos
 
@@ -505,6 +514,10 @@ En la capa de energia que homonizacion los saletite
 
 Capas: 
 
-- Presentacion
-- Logica
--Datos
+* PRESENTACION - GUI
+* APLICACIÓN - código
+* DATOS - persistencia de datos
+
+DTO: Extrae como un txt, o excel donde está la info
+
+DAC: Extrae un paquete como Oracle que queda como objetos
