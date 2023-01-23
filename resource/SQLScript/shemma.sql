@@ -1,1 +1,45 @@
+/**
+*   gabrielJaya: 20.ene.2023
+* Script de base de datos
+*/
+
 .version 
+.database
+.show
+.tables
+
+CREATE TABLE PERSONA
+(
+  ID  INTEGER PRIMARY KEY,
+  NOMBRE VARCHAR(10),
+  APELLIDO VARCHAR(10)
+);
+
+--SELECT * FROM T2
+--DROP TABLE PERSONA;
+
+INSERT INTO PERSONA (ID, NOMBRE, APELLIDO)
+            VALUES (1,"Pepe lucho", "perez");
+INSERT INTO PERSONA (ID, NOMBRE, APELLIDO)
+            VALUES (2,"Ana", "Suarez");
+INSERT INTO PERSONA (ID, NOMBRE, APELLIDO)
+            VALUES (3,"Juan", "Sanchez");
+
+SELECT * FROM PERSONA;
+----------------------------------------------
+CREATE TABLE PET
+(
+  ID  INTEGER PRIMARY KEY,
+  NOMBRE VARCHAR(10),
+  EDAD INTEGER
+);
+
+--DROP TABLE PET;
+
+INSERT INTO PET (ID, NOMBRE, EDAD) VALUES (1,"VALUMA", 1);
+INSERT INTO PET (ID, NOMBRE, EDAD) VALUES (2,"JUANA", 2);
+INSERT INTO PET (ID, NOMBRE, EDAD)  VALUES (3,"COMOTU", 3);
+
+SELECT * FROM PET;
+
+
